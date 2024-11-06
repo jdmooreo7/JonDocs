@@ -1,0 +1,6 @@
+site_name: JonDocs
+theme:
+  name: "mkdocs"  # Using Material for MkDocs (or keep the default theme)
+nav:
+  - Home: index.md
+  - About: about.md
