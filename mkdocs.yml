@@ -1,6 +1,27 @@
-site_name: JonDocs
+site_name: Jon's Docs
+site_description: 'Site with random thoughts and ideas'
+site_author: 'Jon Moore'
+
+repo_url: https://github.com/jdmooreo7/JonDocs/
+
 theme:
-  name: "mkdocs"  # Using Material for MkDocs (or keep the default theme)
+  #name: "mkdocs"  # Using Material for MkDocs (or keep the default theme)
+  #name: "readthedocs"
+  name: "windmill" #Add-on Theme
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jdmooreo7
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jmoore007/
 nav:
   - Home: index.md
-  - About: about.md
+  - Nested Menu:
+    - New Page: mkdocsHelp.md
+    - New Page2: new_page2.md
+    - Nested again:
+      - New Page3: new_page3.md
+plugins:
+  - search
+extra:
+  version: 1.0
+  logo: media/logo.png
